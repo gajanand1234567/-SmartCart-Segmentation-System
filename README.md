@@ -8,11 +8,10 @@ I developed this **Intelligent Customer Segmentation System** using unsupervised
 ## Key Technical Steps
 
 ### 1. Data Preprocessing & Cleaning
-* [cite_start]**Missing Values**: Handled missing `Income` data by imputing the median value to maintain dataset integrity[cite: 2].
-* [cite_start]**Outlier Removal**: Used visualizations (like pairplots) to identify and remove anomalies that could skew the clustering results[cite: 2].
+* **Missing Values**: Handled missing `Income` data by imputing the median value to maintain dataset integrity.
+* **Outlier Removal**: Used visualizations (like pairplots) to identify and remove anomalies that could skew the clustering results.
 
-### 2. Feature Engineering
-[cite_start]Created meaningful new attributes to capture deeper customer insights[cite: 2]:
+### 2. Feature Engineering  Created meaningful new attributes to capture deeper customer insights:
 * **Age**: Derived from birth year.
 * **Customer Tenure**: Calculated total days since enrollment.
 * **Total Spending**: Aggregated spending across all product categories (Wines, Fruits, Meat, Fish, Sweets, and Gold).
@@ -20,14 +19,14 @@ I developed this **Intelligent Customer Segmentation System** using unsupervised
 * **Simplified Categories**: Streamlined `Education` and `Marital_Status` into more manageable groups like "Graduate/Postgraduate" and "Living Alone/With Partner."
 
 ### 3. Feature Transformation
-* [cite_start]**Encoding**: Converted categorical data into numerical format using One-Hot Encoding[cite: 2].
-* [cite_start]**Scaling**: Applied `StandardScaler` to ensure all features contribute equally to the distance-based clustering algorithm[cite: 2].
+*  **Encoding**: Converted categorical data into numerical format using One-Hot Encoding.
+*  **Scaling**: Applied `StandardScaler` to ensure all features contribute equally to the distance-based clustering algorithm.
 
 ### 4. Dimensionality Reduction (PCA)
-With over 15 features, I performed **Principal Component Analysis (PCA)** to reduce the data to 3 dimensions. [cite_start]This minimized noise and allowed for clear 3D visualization of the customer clusters[cite: 2].
+With over 15 features, I performed **Principal Component Analysis (PCA)** to reduce the data to 3 dimensions.  This minimized noise and allowed for clear 3D visualization of the customer clusters.
 
 ### 5. K-Means Clustering
-* [cite_start]**Optimization**: Used the **Elbow Method** and **Silhouette Scores** to determine that **K=4** was the optimal number of clusters[cite: 2].
+*  **Optimization**: Used the **Elbow Method** and **Silhouette Scores** to determine that **K=4** was the optimal number of clusters.
 * **Analysis**: Each of the four clusters represents a unique customer persona, ranging from high-spending loyalists to budget-conscious new users.
 
 ## Strategic Insights & Results
